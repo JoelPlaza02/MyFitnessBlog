@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Users</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  
+<main>
+  <navbar class="navbar">
+    <div class="left-nav">
+      <i class="fa fa-home" id="home-logo"></i>
+      <img src="images/arrow-right.webp" id="arrow-img" alt="arrow link">
+      <p class="blog">Blog</p>
+    </div>
+      <header class="header">
+      <h1>MyFitnessBlog</h1>
+      </header>
+   
+    <div class="social-media-links">
+      <a href="#" id="facebook-logo"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" id="twitter-logo"><i class="fab fa-twitter"></i></a>
+      <a href="#" id="instagram-logo"><i class="fab fa-instagram"></i></a>
+      <a href="#" id="linkedin-logo"><i class="fab fa-linkedin-in"></i></a>
+      <i class="fa fa-search" id="search-btn"></i>
+    </div>
+    </navbar>
+
+  <div class="sub-nav-container">
+  <div class="sub-nav">
+    <ul class="navbar-links">
+      <li><a href="#" class="nav-link">recipes</a></li>
+      <li><a href="#" class="nav-link">nutrition</a></li>
+      <li><a href="#" class="nav-link">weight loss</a></li>
+      <li><a href="#" class="nav-link">fitness</a></li>
+      <li><a href="#" class="nav-link">inspiration</a></li>
+      <li><a href="#" class="nav-link">essentials</a></li>
+      <li><a href="#" class="nav-link">video</a></li>
+    </ul>
+    <label class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </label>
+
+  </div>
+  </div>
+
+  <!-- Sign-up Section -->
+  <div class="hero-section" id="hero-section">
+    <header class="hero-header">
+      <h1>Fitness starts with what you eat.</h1>
+      <p>Sign up for your personalized newsletter.</p>
+    </header>
+    <div class="button-section">
+      <input type="email" name="email" placeholder="Your Email" id="email" required />
+      <button id="send" onclick="message()">sign up</button>
+    </div>
+    <div class="message">
+      <div class="success" id="success">You Have Successfully Signed Up!</div>
+      <div class="error" id="error"><p>Alert</p>Fields Can't be Empty!</div>
+    </div>
+  </div>
+
+  <!-- Trending Blog Section -->
+  <section class="trending">
+    <h4 class=trending-header>Trending Articles</h4>
+      <button class="pre-btn"><img src="images/arrow-slider-blog.png" width="15px" height="15px"></i></button>
+      <button class="next-btn"><img src="images/arrow-slider-blog.png" width="15px" height="15px"></button>
+  <div class="trending-container">
+        <div class="trending-card">
+          <div class="trending-image">
+          <a href="article-site.html"><img src="images/card-1.jpg" alt="Girl walking" class="trending-img"></a>
+          </div>
+        <div class="trending-desc">
+            <a href="article-site.html"><p class="title">The Health Benefits of<br>Walking and Higher Step<br>Counts</p></a>
+          </div>
+        </div>
+
+        <div class="trending-card">
+          <div class="trending-image">
+          <img src="images/card-2.jpeg" alt="Healthy hamburger" class="trending-img">
+          </div>
+        <div class="trending-desc">
+            <p class="title">9 Healthy Burger Recipes<br>Under 450 Calories</p>
+          </div>
+        </div>
+
+        <div class="trending-card">
+          <div class="trending-image">
+          <img src="images/card-3.jpg" alt="Vegetables" class="trending-img">
+          </div>
+        <div class="trending-desc">
+            <p class="title">7 Green Veggies You Haven't Tried, But Totally Should</p>
+          </div>
+        </div>
+
+        <div class="trending-card">
+          <div class="trending-image">
+          <img src="images/card-4.jpg" alt="Healthy taco meal" class="trending-img">
+          </div>
+        <div class="trending-desc">
+            <p class="title">13 Iconic Summer Recipes<br>Under 350 Calories</p>
+          </div>
+        </div>
+
+        <div class="trending-card">
+          <div class="trending-image">
+          <img src="images/card-5.jpg" alt="Man making healthy smoothie" class="trending-img">
+          </div>
+        <div class="trending-desc">
+            <p class="title">How an Athlete's Weight Impacts Macro Needs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-container">
+      <h4 class="blog-header">Latest Articles</h4>
+      <div class="row">
+        <div class="col">
+          <div class="blog-card">
+            <div class="blog-image">
+              <a href="article-site2.html"><img src="images/card-6.jpg" alt="Man exercising with stationary bike" class="blog-img"></a>
+              <button id="hover-save-btn" onclick="saveNoti()">Save</button>
+            </div>
+            <div class="blog-title">
+              <a href="article-site2.html"><p>5 Drills to Try on a Spin Bike</p></a>
+            </div>
+            </div>
+            <div class="blog-date">
+              <p><small>MAY 24, 2022</small></p>
+            </div>
+        </div>
+
+        <div class="col">
+          <div class="blog-card">
+            <div class="blog-image">
+              <img src="images/card-7.jpg" alt="Man exercising with medicine ball" class="blog-img" id="article-img">
+              <button id="hover-save-btn" onclick="saveNoti()">Save</button>
+            </div>
+            <div class="blog-title">
+            <p>Eating for Next-Level Fitness: 6 More Tips from<br>a Sports Dietitian</p>
+            </div>
+            <div class="blog-date">
+              <p><small>JUNE 15, 2022</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="blog-card">
+            <div class="blog-image">
+              <img src="images/card-8.jpg" alt="Man tracking macros on phone" class="blog-img">
+              <button id="hover-save-btn3" onclick="saveNoti()">Save</button>
+            </div>
+            <div class="blog-title">
+            <p>Logging Macros: Spreading Out Daily Protein</p>
+            </div>
+            <div class="blog-date">
+              <p><small>JUNE 13, 2022</small></p>
+            </div>
+          </div>
+        </div>
+        </div>
+         
+        <div class="row">
+        <div class="col">
+          <div class="blog-card">
+            <div class="blog-image">
+              <img src="images/card-9.jpg" alt="Vegatables in grocery bag" class="blog-img-r2">
+              <button id="hover-save-btn4" onclick="saveNoti()">Save</button>
+            </div>
+            <div class="blog-title">
+            <p>10 Budget-Friendly Ways to Eat Healthy</p>
+            </div>
+            <div class="blog-date">
+              <p><small>JUNE 17, 2022</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="blog-card">
+            <div class="blog-image">
+              <img src="images/card-10.webp" alt="Man running" class="blog-img-r2" id="man-running">
+              <button id="hover-save-btn5" onclick="saveNoti()"s>Save</button>
+            </div>
+            <div class="blog-title">
+            <p>Is Sports Food Junk or Enhance Performance?</p>
+            </div>
+            <div class="blog-date">
+              <p><small>JUNE 6, 2022</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="blog-card">
+            <div class="blog-image">
+              <img src="images/card-11.webp" alt="Man holding weight" class="blog-img-r2" id="blog-img-r2-6">
+              <button id="hover-save-btn6" onclick="saveNoti()">Save</button>
+            </div>
+            <div class="blog-title">
+            <p class="article6-title">Eating for Next-Level Fitness: 6 Tips from a Sports Dietitian</p>
+            </div>
+            <div class="blog-date">
+              <p><small>JUNE 13, 2022</small></p>
+            </div>
+          </div>
+         </div>
+        </div>
+<!--load more3-->
+<div class="load-more-cards">
+      <div class="row">
+        <div class="col">
+          <div class="blog-card-load1">
+            <div class="blog-image">
+              <img src="images/card-12.jpg" alt="Two women talking while drinking a green smootie" class="blog-img-r2" id="blog-img-r21">
+              <button id="hover-save-btn7" onclick="saveNoti()">Save</button>
+            </div>
+            <div class="blog-title">
+            <p>Can You Eat Your Way to a Better Mood?</p>
+            </div>
+            <div class="blog-date">
+              <p><small>MAY 25, 2022</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="blog-card-load2">
+            <div class="blog-image">
+              <img src="images/card-13.jpg" alt="Delicous Desert" class="blog-img-r2" id="blog-img-r22">
+              <button id="hover-save-btn8" onclick="saveNoti()">Save</button>
+            </div>
+            <div class="blog-title">
+            <p>How Lack of Sleep Affects Junk Food Cravings</p>
+            </div>
+            <div class="blog-date">
+              <p><small>MAY 18, 2022</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="blog-card-load3">
+            <div class="blog-image">
+              <img src="images/card-14.jpg" alt="Man taking a bite out off a peanut butter sandwich" class="blog-img-r2" id="blog-img-r2">
+              <button id="hover-save-btn9" onclick="saveNoti()">Save</button>
+            </div>
+            <div class="blog-title">
+            <p>An Unhealthy Diet Can Hurt Your Brain</p>
+            </div>
+            <div class="blog-date">
+              <p><small>MAY 11, 2022</small></p>
+            </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="load-btn">
+        <button id="load-more-btn" class="load-more-btn" onclick="loadMore()">load more</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer-container">
+    <header class="footer-header">
+      <h1>MyFitnessBlog</h1>
+    </header>
+    <div class="sub-header">
+      <h4>MyFitnessBlog</h4>
+    </div>
+    <div class="footer-text">
+      <p class="foot-txt">
+        is the leading app for tracking—and conquering—your nutrition and fitness goals. Log meals from a database of 14 million foods, track physical activity, and learn how to build healthy habits that stick. With more than 500 recipes, 150 workout routines, and a variety of expert-guided meal and workout plans, you'll have the support you need for your entire health and fitness journey.
+      </p>
+    </div>
+    <div class="myfitnessblog">
+      <p>MyFitnessBlog</p>
+    </div>
+    <div class="copyright-section">
+      <p><small>© 2022MyFitnessBlog | Private Policy | Terms | Cookie Preferences</small></p>
+    </div>
+    </section>
+  </section>
+</main>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!--https://blog.myfitnesspal.com/-->
+<!--https://www.geeksforgeeks.org/creating-range-slider-html-using-javascript/-->
